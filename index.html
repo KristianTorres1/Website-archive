@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Showcase - Browse Amazing Websites</title>
+    <link rel="stylesheet" href="browses.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>WebShowcase</h1>
+                </div>
+                <div class="nav-controls">
+                    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Discover Amazing Websites</h2>
+                <p>Browse through our curated collection of stunning web designs</p>
+                
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-bar" placeholder="Search websites by name, category, or description...">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="websites-section">
+            <div class="container">
+                <div id="resultsCount" class="results-count"></div>
+                <div id="websitesGrid" class="websites-grid">
+                </div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No websites found matching your search.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WebShowcase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data1.js"></script>
+    <script src="browses.js"></script>
+</body>
+</html>
